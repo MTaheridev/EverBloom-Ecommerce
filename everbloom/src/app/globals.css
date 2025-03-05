@@ -1,2 +1,28 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bgPrimary: #1a1a1a;
+  --color-bgSecondary: #232323;
+  --color-txtPrimary: #232323;
+  --color-txtSecondary: #B3B3B3;
+  --color-accentPrimary: #4CAF50;
+  --color-accentSecondary: #EED8A4;
+  --color-border: #292929;
+  --font-header: "Playfair Display";
+  --font-text: "Space Grotesk";
+}
+
+@layer base{
+  html{
+    @apply w-lvw h-lvh bg-bgPrimary
+  }
+
+  h1, h2, h3{
+    @apply font-header
+  }
+
+  p{
+    @apply font-text
+  }
+}

@@ -1,9 +1,12 @@
-import Image from "next/image";
+import { MyFooter } from "@/components/layout/footer";
+import { MyHeader } from "@/components/layout/header";
 
 export default function Home() {
   return (
     <div>
-      Mamad GOD is here bitches!
+      <MyHeader />
+      <h1>Mamad is here!</h1>
+      <MyFooter />
     </div>
   );
 }
