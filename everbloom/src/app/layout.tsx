@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { MyHeader } from "@/components/layout/header";
+import { MyFooter } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
   title: "EverBloom | Indoor Plants for Modern Living",
@@ -13,8 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-[100%] flex flex-col select-none">
+        <MyHeader />
+        <div className="flex-grow">
         {children}
+        </div>
+        <MyFooter />
       </body>
     </html>
   );
