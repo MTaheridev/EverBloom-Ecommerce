@@ -10,10 +10,10 @@ export const MyFooter = () => {
       <div className='flex flex-row justify-between items-center my-2 w-[90vw] max-w-[920px]'>
         <p>join our communities:</p>
         <div className='flex flex-row'>
-          <Image src={"pinterestLogo.svg"} alt='EverBloom logo | Indoor Plants for Modern Living' width={35} height={35}/>
-          <Image src={"telegramLogo.svg"} alt='EverBloom logo | Indoor Plants for Modern Living' width={35} height={35}/>
-          <Image src={"instagramLogo.svg"} alt='EverBloom logo | Indoor Plants for Modern Living' width={35} height={35}/>
-          <Image src={"tiktokLogo.svg"} alt='EverBloom logo | Indoor Plants for Modern Living' width={35} height={35}/>
+          <Image src={"pinterestLogo.svg"} alt='EverBloom logo | Indoor Plants for Modern Living' width={35} height={35} className=' scale-100 hover:scale-125 transition-transform cursor-pointer'/>
+          <Image src={"telegramLogo.svg"} alt='EverBloom logo | Indoor Plants for Modern Living' width={35} height={35} className=' scale-100 hover:scale-125 transition-transform cursor-pointer'/>
+          <Image src={"instagramLogo.svg"} alt='EverBloom logo | Indoor Plants for Modern Living' width={35} height={35} className=' scale-100 hover:scale-125 transition-transform cursor-pointer'/>
+          <Image src={"tiktokLogo.svg"} alt='EverBloom logo | Indoor Plants for Modern Living' width={35} height={35} className=' scale-100 hover:scale-125 transition-transform cursor-pointer'/>
         </div>
       </div>
       <div className='w-[90vw] h-[1px] bg-linear-to-r from-accentPrimary/0 via-accentPrimary to-accentPrimary/0'></div>

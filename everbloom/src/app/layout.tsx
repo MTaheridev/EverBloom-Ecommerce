@@ -3,6 +3,7 @@ import "./globals.css";
 import { MyHeader } from "@/components/layout/header";
 import { MyFooter } from "@/components/layout/footer";
 
+
 export const metadata: Metadata = {
   title: "EverBloom | Indoor Plants for Modern Living",
   description: "Transform your apartment into a serene oasis with EverBloom. Explore our collection today and discover how easy it is to bring the beauty of nature indoors!",

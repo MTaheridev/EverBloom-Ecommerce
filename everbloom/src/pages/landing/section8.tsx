@@ -6,6 +6,7 @@ import React, { useRef, useState, useEffect } from "react";
 export const SectionEight: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobileCardOpen, setMobileCardOpen] = useState(false);
 
   useEffect(() => {
     const body = document.body;
@@ -20,6 +21,10 @@ export const SectionEight: React.FC = () => {
       body.style.overflow = "auto";
     };
   }, [isHovered]);
+
+  const handleCardOpen = () => {
+    setMobileCardOpen(!isMobileCardOpen);
+  }
 
   const handleWheel = (e: React.WheelEvent<HTMLDivElement>) => {
     if (scrollRef.current) {
@@ -42,6 +47,21 @@ export const SectionEight: React.FC = () => {
       });
     }
   };
+
+    useEffect(() => {
+        // Lock scrolling when the menu is open
+        if (isMobileCardOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cleanup function to reset overflow style
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isMobileCardOpen]);
+
   return (
     <div className="h-[calc(100vh-80px)] w-lvw overflow-hidden flex flex-col">
       <div className="flex flex-col justify-between pl-8 pt-4 lg:mt-8 xl:ml-20 h-28 lg:h-24">
@@ -117,12 +137,18 @@ export const SectionEight: React.FC = () => {
           />
         </div>
         <div className="hidden xl:flex w-[30%]">
-          <AskQuestionCard />
+          <AskQuestionCard xl/>
         </div>
       </div>
-      <p className="xl:hidden self-end px-8 py-4 text-accentPrimary">
+      <p className="xl:hidden self-end px-8 py-4 text-accentPrimary" onClick={handleCardOpen}>
         didn’t find your answer here?
       </p>
+      {
+          isMobileCardOpen &&
+          <div className="w-full h-full xl:hidden absolute bg-bgPrimary/90 backdrop-blur-xs flex flex-col justify-center items-center">
+            <AskQuestionCard closeModal={handleCardOpen}/>
+          </div>
+        }
     </div>
   );
 };
