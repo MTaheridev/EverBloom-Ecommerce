@@ -14,7 +14,7 @@ export const SectionFive = () => {
         </div>
       </div>
       <div className="landing-section5-grid grow">
-        <div className="h-[250px] lg:h-auto lg:row-span-7 lg:col-start-1 border-1 border-accentSecondary rounded-lg relative overflow-hidden">
+        <div className="h-[250px] lg:h-auto lg:row-span-7 lg:col-start-1 rounded-lg relative overflow-hidden">
           <div className=" w-full h-full absolute left-0 top-0 z-0">
             <Image
               src={"/Watering101.png"}
@@ -30,7 +30,7 @@ export const SectionFive = () => {
             </div>
           </div>
         </div>
-        <div className="h-[250px] lg:h-auto lg:row-span-8 lg:col-start-2 lg:row-start-1 border-1 border-accentSecondary rounded-lg relative overflow-hidden">
+        <div className="h-[250px] lg:h-auto lg:row-span-8 lg:col-start-2 lg:row-start-1 rounded-lg relative overflow-hidden">
           <div className=" w-full h-full absolute left-0 top-0 z-0">
             <Image
               src={"/pruning.png"}
@@ -48,7 +48,7 @@ export const SectionFive = () => {
             </h2>
           </div>
         </div>
-        <div className="h-[250px] lg:h-auto lg:row-span-7 lg:col-start-3 lg:row-start-1 border-1 border-accentSecondary rounded-lg relative overflow-hidden">
+        <div className="h-[250px] lg:h-auto lg:row-span-7 lg:col-start-3 lg:row-start-1  rounded-lg relative overflow-hidden">
           <div className=" w-full h-full absolute left-0 top-0 z-0">
             <Image
               src={"/lighting.png"}
