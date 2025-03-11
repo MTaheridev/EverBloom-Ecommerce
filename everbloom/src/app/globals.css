@@ -45,6 +45,18 @@
   }
 
   .landing-section3-grid{
-    @apply h-lvh px-8 mt-8 grid grid-cols-2 gap-2
+    @apply px-8 my-8 grid grid-cols-2 gap-2
+    lg:grid-cols-4 lg:grid-rows-3
+    xl:mx-20 
+  }
+
+  .landing-section5-grid{
+    @apply px-8 my-8 grid grid-cols-1 gap-2
+    lg:grid-cols-4 lg:grid-rows-3
+    xl:mx-20 
+  }
+
+  .clip-path {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 58.5%, 60.3% 58.5%, 60.3% 99.8%, 0% 100%, 0% 85%, 0% 15%);
   }
 }

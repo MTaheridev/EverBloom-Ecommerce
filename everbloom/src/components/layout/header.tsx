@@ -5,7 +5,7 @@ import { SearchBar } from "./searchBar";
 
 export const MyHeader = () => {
   return (
-    <div className="w-lvw px-4 xl:px-[5vw] lg:self-center h-20 flex flex-row justify-between items-center sticky top-0 z-50 bg-bgPrimary">
+    <div className="w-lvw px-4 xl:px-[5vw] lg:self-center h-20 flex flex-row justify-between items-center sticky top-0 z-50 bg-gradient-to-b from-bgPrimary to-bgPrimary/0">
       <div className="flex flex-row">
         <div className="flex flex-row items-end">
           <Image src={"logo.svg"} alt="EverBloom Logo" width={40} height={40} />

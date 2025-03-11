@@ -11,13 +11,21 @@ export default function Home() {
   return (
     <div className="">
       <SectionOne />
+      <div className="h-20"></div>
       <SectionTwo /> 
+      <div className="h-20"></div>
       <SectionThree />
+      <div className="h-20"></div>
       <SectionFour />
+      <div className="h-20"></div>
       <SectionFive />
+      <div className="h-20"></div>
       <SectionSix />
+      <div className="h-20"></div>
       <SectionSeven />
+      <div className="h-20"></div>
       <SectionEight />
+      <div className="h-20"></div>
     </div>
   );
 }
