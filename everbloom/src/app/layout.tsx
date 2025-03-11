@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-[100%] flex flex-col select-none">
+      <body  className="min-h-[100%] flex flex-col select-none">
         <MyHeader />
         <div className="flex-grow">
         {children}
