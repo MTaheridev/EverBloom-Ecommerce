@@ -12,14 +12,14 @@ export const MobileMenu = () => {
     }
 
     useEffect(() => {
-        // Lock scrolling when the menu is open
+        
         if (mobileMenuOpen) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = 'auto';
         }
 
-        // Cleanup function to reset overflow style
+        
         return () => {
             document.body.style.overflow = 'auto';
         };

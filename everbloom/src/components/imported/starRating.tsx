@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface StarRatingProps {
-  rating: number; // Rating from 0 to totalStars
-  totalStars?: number; // Total number of stars to display
+  rating: number; 
+  totalStars?: number; 
 }
 
 const StarRating: React.FC<StarRatingProps> = ({

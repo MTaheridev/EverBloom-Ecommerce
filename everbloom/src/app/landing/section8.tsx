@@ -5,22 +5,8 @@ import React, { useRef, useState, useEffect } from "react";
 
 export const SectionEight: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
-  const [isHovered, setIsHovered] = useState(false);
   const [isMobileCardOpen, setMobileCardOpen] = useState(false);
 
-  useEffect(() => {
-    const body = document.body;
-
-    if (isHovered) {
-      body.style.overflow = "hidden";
-    } else {
-      body.style.overflow = "auto";
-    }
-
-    return () => {
-      body.style.overflow = "auto";
-    };
-  }, [isHovered]);
 
   const handleCardOpen = () => {
     setMobileCardOpen(!isMobileCardOpen);
@@ -48,19 +34,6 @@ export const SectionEight: React.FC = () => {
     }
   };
 
-    useEffect(() => {
-        // Lock scrolling when the menu is open
-        if (isMobileCardOpen) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
-
-        // Cleanup function to reset overflow style
-        return () => {
-            document.body.style.overflow = 'auto';
-        };
-    }, [isMobileCardOpen]);
 
   return (
     <div className="h-[calc(100vh-80px)] w-lvw overflow-hidden flex flex-col">
@@ -75,11 +48,7 @@ export const SectionEight: React.FC = () => {
       </div>
       <div className="flex flex-row mx-8 xl:mx-20 justify-center overflow-scroll grow">
         <div
-          ref={scrollRef}
           className="grow mt-8 mr-4 overflow-scroll"
-          onWheel={handleWheel}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         >
           <FAQCard
             faq={{
@@ -140,7 +109,7 @@ export const SectionEight: React.FC = () => {
           <AskQuestionCard xl/>
         </div>
       </div>
-      <p className="xl:hidden self-end px-8 py-4 text-accentPrimary" onClick={handleCardOpen}>
+      <p className="xl:hidden self-end px-8 py-4 text-accentSecondary" onClick={handleCardOpen}>
         didn’t find your answer here?
       </p>
       {

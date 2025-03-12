@@ -67,10 +67,10 @@ export const SectionFive = () => {
           </div>
         </div>
         <button className="col-span-1 lg:row-start-1 h-14 lg:h-auto bg-accentSecondary rounded-lg">
-          <h2 className="text-bgPrimary lg:text-xl xl:text-2xl">Get Custom Care Guides</h2>
+          <h2 className="text-bgPrimary font-semibold lg:text-xl xl:text-2xl">Get Custom Care Guides</h2>
         </button>
         <button className="col-span-1 lg:col-start-3 h-14 lg:h-auto border-1 border-accentSecondary rounded-lg">
-          <h2 className="text-accentSecondary lg:text-xl xl:text-2xl">Rescue My Plant!</h2>
+          <h2 className="text-accentSecondary font-semibold lg:text-xl xl:text-2xl">Rescue My Plant!</h2>
         </button>
       </div>
     </div>

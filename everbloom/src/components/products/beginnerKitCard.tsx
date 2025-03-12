@@ -33,8 +33,8 @@ export const BeginnerKitCard: React.FC<BeginnerKitCardProps> = ({ imageSrc, titl
                 <p className='text-txtPrimary'>price:</p>
                 <p className='text-accentSecondary'>{price}</p>
             </div>
-            <button className='w-full h-12 border-1 border-accentPrimary rounded-lg'>
-                <h2 className='text-accentPrimary'>order this kit</h2>
+            <button className='w-full h-12 bg-accentPrimary rounded-lg'>
+                <h2 className='text-txtPrimary font-semibold tracking-wider text-lg'>Order this kit</h2>
             </button>
         </div>
     </div>

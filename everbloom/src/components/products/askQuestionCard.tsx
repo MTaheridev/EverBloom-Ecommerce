@@ -32,7 +32,7 @@ const AskQuestionCard: React.FC<AskQuestionProps> = ({ closeModal, xl }) => {
             type="submit"
             className="w-full h-12 p-2 bg-accentSecondary rounded-lg"
           >
-            <h2 className="text-bgPrimary text-lg">Ask Your Question</h2>
+            <h2 className="text-bgPrimary text-lg font-semibold">Ask Your Question</h2>
           </button>
         </form>
       </div>

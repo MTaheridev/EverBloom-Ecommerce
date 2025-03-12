@@ -24,7 +24,7 @@ export const LandingProductCard = () => {
             </ul>
             <p className="text-accentSecondary text-xl">$ 24.99</p>
             <div className="w-full flex flex-row">
-              <button className="h-12 grow text-accentPrimary border-2 border-accentPrimary rounded-lg">
+              <button className="h-12 grow text-accentSecondary border-2 border-accentPrimary rounded-lg">
               Quick View
               </button>
               <button className="relative size-12 ml-2 bg-accentPrimary rounded-lg">
