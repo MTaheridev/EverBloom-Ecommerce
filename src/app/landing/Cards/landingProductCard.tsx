@@ -1,5 +1,5 @@
 import React from "react";
-import SpotlightCard from "../imported/spotlightCard";
+import SpotlightCard from "../../../components/imported/spotlightCard";
 import Image from "next/image";
 
 export const LandingProductCard = () => {

@@ -1,6 +1,6 @@
 "use client";
-import AskQuestionCard from "@/components/products/askQuestionCard";
-import FAQCard from "@/components/products/faqCard";
+import AskQuestionCard from "@/app/landing/Cards/askQuestionCard";
+import FAQCard from "@/app/landing/Cards/faqCard";
 import React, { useRef, useState, useEffect } from "react";
 
 export const SectionEight: React.FC = () => {

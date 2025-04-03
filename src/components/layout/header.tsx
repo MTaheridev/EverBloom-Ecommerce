@@ -13,8 +13,8 @@ export const MyHeader = () => {
         </a>
         <div className="hidden lg:flex flex-row justify-evenly items-end w-96 h-10">
           <a href="/shop"><h3>Shop</h3></a>
-          <a href=""><h3>Cart</h3></a>
-          <a href=""><h3>About</h3></a>
+          <a href="/cart"><h3>Cart</h3></a>
+          <a href="/about"><h3>About</h3></a>
         </div>
       </div>
       <div className="w-72 hidden lg:block">

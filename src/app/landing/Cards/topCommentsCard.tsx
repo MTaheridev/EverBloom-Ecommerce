@@ -1,7 +1,7 @@
 import React from "react";
-import SpotlightCard from "../imported/spotlightCard";
+import SpotlightCard from "../../../components/imported/spotlightCard";
 import Image from "next/image";
-import StarRating from "../imported/starRating";
+import StarRating from "../../../components/imported/starRating";
 
 export const TopCommentsCard = () => {
   return (

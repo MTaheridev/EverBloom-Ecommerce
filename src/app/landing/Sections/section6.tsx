@@ -1,6 +1,6 @@
 "use client";
-import { LandingProductCard } from "@/components/products/landingProductCard";
-import { TopCommentsCard } from "@/components/products/topCommentsCard";
+import { LandingProductCard } from "@/app/landing/Cards/landingProductCard";
+import { TopCommentsCard } from "@/app/landing/Cards/topCommentsCard";
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 

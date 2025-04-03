@@ -1,5 +1,5 @@
 "use client"
-import { LandingProductCard } from "@/components/products/landingProductCard";
+import { LandingProductCard } from "@/app/landing/Cards/landingProductCard";
 import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 

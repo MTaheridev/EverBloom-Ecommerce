@@ -1,4 +1,4 @@
-import { BeginnerKitCard } from "@/components/products/beginnerKitCard";
+import { BeginnerKitCard } from "@/app/landing/Cards/beginnerKitCard";
 import React from "react";
 
 export const SectionSeven = () => {
