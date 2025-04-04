@@ -129,4 +129,38 @@
     }
   }
 
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .not-found h1 {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+  
+  .not-found p {
+    font-size: 1.5rem;
+  }
+  
+  .not-found a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .not-found a:hover {
+    background-color: #0056b3;
+  }
+  
+
 }
